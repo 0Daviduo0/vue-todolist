@@ -20,7 +20,7 @@
         <header>
 
             <div class="addNote_container">
-                <input id="addNote_input" type="text" placeholder="Cosa vuoi aggiungere?" v-model="newNote">
+                <input id="addNote_input" type="text" placeholder="Cosa vuoi aggiungere?" v-model="newNote" @keyUp.enter="addNote">
                 <button id="addNote_button" @click="addNote"> <i class="fa-solid fa-share"></i> </button>
             </div>
 
@@ -37,7 +37,7 @@
                 <ul>
                     <!-- Contains notes and buttos inside a list -->
                     <div class="note_chip" v-for="note in notes">
-                        <li id="li_notes">{{ note.nota }}</li>
+                        <li id="li_notes" >{{ note.nota }}</li>
                         <div class="action_buttons">
                             <button id="doneNote" > <i class="fa-solid fa-circle-check"></i> </button> 
                             <button id="removeNote" > <i class="fa-solid fa-eraser"></i> </button>
