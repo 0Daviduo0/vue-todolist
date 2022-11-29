@@ -15,52 +15,56 @@
     <title>Simple ToDo List - keep organized</title>
 </head>
 <body>
+    <div id="app" class="all_container">
 
-    <header>
+        <header>
 
-        <div class="addNote_container">
-            <input id="addNote_input" type="text" placeholder="Cosa vuoi aggiungere?">
-            <button id="addNote_button"> <i class="fa-solid fa-share"></i> </button>
-        </div>
+            <div class="addNote_container">
+                <input id="addNote_input" type="text" placeholder="Cosa vuoi aggiungere?">
+                <button id="addNote_button"> <i class="fa-solid fa-share"></i> </button>
+            </div>
 
-        <div class="logo">
-            <img id="logo-header" src="img/logo.png" alt="">
-        </div>
-        
-    </header>
+            <div class="logo">
+                <img id="logo-header" src="img/logo.png" alt="">
+            </div>
+            
+        </header>
 
 
-    <main>
+        <main>
 
-        <div class="note_container">
-            <ul>
-                <div class="note_chip">
-                    <li id="li_notes">placeholder</li>
-                    <div class="action_buttons">
-                        <button id="doneNote"> <i class="fa-solid fa-circle-check"></i> </button>
-                        <button id="removeNote"> <i class="fa-solid fa-eraser"></i> </button>
+            <div class="note_container">
+                <ul>
+                    <!-- Contains notes and buttos inside a list -->
+                    <div class="note_chip" v-for="note in notes">
+                        <li id="li_notes">{{ note.nota }}</li>
+                        <div class="action_buttons">
+                            <button id="doneNote"> <i class="fa-solid fa-circle-check"></i> </button>
+                            <button id="removeNote"> <i class="fa-solid fa-eraser"></i> </button>
+                        </div>
                     </div>
-                </div>
-                
-                
-            </ul>
-        </div>
+                    
+                </ul>
+            </div>
 
-    </main>
+        </main>
 
 
-    <footer>
-        <div class="footer_links">
-            <ul>
-                <li id="li_footer">placeholder</li>
-                <li id="li_footer">placeholder</li>
-                <li id="li_footer">placeholder</li>
-                <li id="li_footer">placeholder</li>
-                <li id="li_footer">placeholder</li>
-            </ul>
-        </div>
-    </footer>
+        <footer>
+            <div class="footer_links">
+                <ul>
+                    <li id="li_footer">PLACEHOLDER</li>
+                    <li id="li_footer">PLACEHOLDER</li>
+                    <li id="li_footer">PLACEHOLDER</li>
+                    <li id="li_footer">PLACEHOLDER</li>
+                    <li id="li_footer">PLACEHOLDER</li>
+                </ul>
+            </div>
+        </footer>
 
+        
+    </div>
+        
 
 
 
