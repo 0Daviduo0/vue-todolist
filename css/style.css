@@ -120,6 +120,24 @@ main{
                 backdrop-filter: blur(9px);
                 border: 1px solid rgba(255, 255, 255, 0.29);
             }
+        
+        .zeroNotes{
+            font-size: 30px;
+            font-weight: 900;
+            text-align: center;
+        }
+
+            .try{
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight: 300;
+                padding: 10px;
+                background: rgba(255, 255, 255, 0.21);
+                border-radius: 10px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(9px);
+                border: 1px solid rgba(255, 255, 255, 0.29);
+            }
 
 footer{
     width: 100%;

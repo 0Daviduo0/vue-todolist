@@ -26,6 +26,7 @@ createApp({
         },
         removeNote(index){
             this.notes.splice(index, 1);
-        }
+        },
+        
     }
 }).mount('#app')

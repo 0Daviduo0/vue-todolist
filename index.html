@@ -33,7 +33,7 @@
 
         <main>
 
-            <div class="note_container">
+            <div class="note_container" v-if="notes.length > 0">
                 <ul>
                     <!-- Contains notes and buttos inside a list -->
                     <div class="note_chip" v-for="(note, index) in notes">
@@ -45,6 +45,13 @@
                     </div>
                     
                 </ul>
+            </div>
+
+            <div class="zeroNotes" v-else>
+                NON HAI DAVVERO NULLA DA FARE? 🤔
+                <div class="try">
+                    PROVA AD AGGIUNGERE UNA NOTA CON LA BARRA IN ALTO!⬆️
+                </div>
             </div>
 
         </main>
