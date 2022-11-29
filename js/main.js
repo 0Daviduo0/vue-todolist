@@ -14,7 +14,18 @@ createApp({
     },
     methods: {
         addNote(){
-            this.notes.push({ nota: this.newNote, completata: false });
+            if(this.newNote.length < 5 || this.newNote === ""){
+                this.error = true;
+                console.log("errore")
+            }
+            else{
+                this.notes.unshift({ nota: this.newNote, completata: false });
+                this.error = false;
+            }
+            this.newNote = "";
+        },
+        removeNote(index){
+            this.notes.splice(index, 1);
         }
     }
 }).mount('#app')

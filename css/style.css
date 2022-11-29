@@ -43,7 +43,7 @@ header{
         height: 100px;
     }
 
-    #addNote_input{
+    .addNote_input{
         padding: 0 10px;
         width: 400px;
         height: 40px;
@@ -54,6 +54,11 @@ header{
         backdrop-filter: blur(9px);
         border: 1px solid rgba(255, 255, 255, 0.29);
     }
+
+        .error{
+            background: rgba(255, 98, 98, 0.389);
+        }
+
 
     #addNote_button{
         margin-left: 20px;
