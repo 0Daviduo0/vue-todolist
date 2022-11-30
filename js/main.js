@@ -27,6 +27,20 @@ createApp({
         removeNote(index){
             this.notes.splice(index, 1);
         },
+        doneNote(index){
+            if (this.notes[index].completata == false){
+                console.log("la nota", this.notes[index].completata, "è stata completata")
+                this.notes[index].completata = true;
+                console.log(this.notes[index].completata)
+            }
+            else{
+                console.log("la nota", this.notes[index].completata, "è stata rimossa dai completati")
+                this.notes[index].completata = false;
+                console.log(this.notes[index].completata);
+
+            }
+
+        }
         
     }
 }).mount('#app')

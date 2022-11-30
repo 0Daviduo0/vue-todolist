@@ -5,6 +5,7 @@
     font-family: 'Jost', sans-serif;
     font-family: 'Manrope', sans-serif;
 }
+  
 
 img{
     width: 100%;
@@ -52,7 +53,7 @@ header{
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(9px);
-        border: 1px solid rgba(255, 255, 255, 0.29);
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .addNote_input:hover{
@@ -138,6 +139,14 @@ main{
             #doneNote:hover, #removeNote:hover{
                 outline: #6c63ff 3px solid;
             }
+
+                .green{
+                    color: green
+                }
+
+                .black{
+                    color: black
+                }
         
         .zeroNotes{
             font-size: 30px;
