@@ -39,7 +39,7 @@
                     <div class="note_chip" v-for="(note, index) in notes">
                         <li id="li_notes" >{{ note.nota }}</li>
                         <div class="action_buttons">
-                            <button id="doneNote" @click="doneNote(index)" :class="{ purple: this.notes[index].completata == true }" :class="{ black: this.notes[index].completata == false }"> <i class="fa-solid fa-circle-check"></i> </button> 
+                            <button id="doneNote" @click="doneNote(index)" :class="{ purple: note.completata == true }" :class="{ black: note.completata == false }"> <i class="fa-solid fa-circle-check"></i> </button> 
                             <button id="removeNote" @click="removeNote(index)"> <i class="fa-solid fa-eraser"></i> </button>
                         </div>
                     </div>
