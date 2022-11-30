@@ -29,12 +29,12 @@ createApp({
         },
         doneNote(index){
             if (this.notes[index].completata == false){
-                console.log("la nota", this.notes[index].completata, "è stata completata")
+                console.log("la nota", this.notes[index].nota, "è stata completata")
                 this.notes[index].completata = true;
                 console.log(this.notes[index].completata)
             }
             else{
-                console.log("la nota", this.notes[index].completata, "è stata rimossa dai completati")
+                console.log("la nota", this.notes[index].nota, "è stata rimossa dai completati")
                 this.notes[index].completata = false;
                 console.log(this.notes[index].completata);
 

@@ -95,8 +95,9 @@ main{
     justify-content: center;
     padding: 50px 30px;
     position: relative;
-    overflow: hidden;
+    /* overflow-y: scroll; */
 }
+
 
     .note_container{
         width: 80%;
@@ -140,12 +141,12 @@ main{
                 outline: #6c63ff 3px solid;
             }
 
-                .green{
-                    color: green
+                .purple{
+                    color: #6c63ff;
                 }
 
                 .black{
-                    color: black
+                    color: black;
                 }
         
         .zeroNotes{
